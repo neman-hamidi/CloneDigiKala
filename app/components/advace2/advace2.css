@@ -1,0 +1,29 @@
+.div-advance2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.advace2 {
+  width: 90%;
+  margin: 1rem auto;
+}
+.div-advance2 div img {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+@media screen and (min-width: 1100px) {
+  .div-advance2 {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.5rem;
+  }
+  .category div div label {
+    font-size: 0.85rem;
+  }
+  .category div div {
+    text-align: center;
+    width: 7rem;
+  }
+}

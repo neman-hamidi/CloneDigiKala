@@ -1,0 +1,40 @@
+.flare {
+  position: fixed;
+  border: 20px solid black;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important ;
+  backdrop-filter: blur(120px);
+  background-color: black;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  cursor: none !important;
+  -webkit-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -moz-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -ms-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* We need to remove this custom cursor in mobile devices */
+@media screen and (max-width: 768px) {
+  .flare {
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+}

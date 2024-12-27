@@ -1,0 +1,114 @@
+.img-nav {
+  display: none;
+}
+.img-nav img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1.5rem;
+}
+.nav-div-form {
+  margin: 1rem;
+}
+.nav form {
+  width: 100%;
+}
+.nav-div-form div {
+  position: relative;
+  text-align: center;
+}
+.nav-div-form div input {
+  padding: 0.5rem 2.2rem 0.5rem 1rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background: rgb(238, 238, 238);
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-div-form div input:focus {
+  background: rgb(238, 238, 238);
+  outline: none;
+}
+
+.search-icon-nav {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.5rem;
+  color: rgb(123, 123, 123);
+  font-size: 1.3rem;
+}
+.tablighat-nav {
+  height: 2.2rem;
+}
+.tablighat-nav img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.main-div-login {
+  display: none;
+}
+
+.mini-div-amodi {
+  width: 0.02rem;
+  height: 0.7rem;
+  background-color: rgb(25, 25, 25);
+}
+.div-amodi {
+  width: 0.01rem;
+  height: 2rem;
+  background-color: rgb(221, 221, 221);
+}
+.login-div {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid gainsboro;
+  padding: 0.3rem;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+@media screen and (min-width: 1100px) {
+  .tablighat-nav {
+    height: 3.75rem;
+  }
+  .img-nav {
+    display: block;
+  }
+  .nav-div-form div input {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    width: 40rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+  .nav-div-form {
+    justify-items: right;
+  }
+  .main-div-login {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr auto;
+    justify-items: center;
+    align-items: center;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0.25rem auto;
+  }
+  .search-icon-nav {
+    font-size: 1.5rem;
+  }
+}
