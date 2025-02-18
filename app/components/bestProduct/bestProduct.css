@@ -1,0 +1,75 @@
+.icon-bestproduct {
+  color: red;
+  padding-left: 0.25rem;
+}
+.most-sale-product {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+}
+.most-sale-product div p {
+  font-size: 0.7rem;
+}
+.most-sale-product div button {
+  font-size: 0.8rem;
+  color: rgb(81, 81, 255);
+}
+.icon-category {
+  color: #f9a825;
+}
+.div-most-sale {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1.25rem;
+}
+.div2-most-sale {
+  display: grid;
+  grid-template-columns: auto 0.35fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+.div2-most-sale div img {
+  width: 5rem;
+  height: 5rem;
+}
+.p-number-most-sale {
+  font-size: 2rem;
+  font-weight: bold;
+  color: skyblue;
+}
+.p-most-sale {
+  font-size: 0.7rem;
+}
+@media screen and (min-width:500px) {
+  .div2-most-sale {
+    grid-template-columns: 0.4fr auto 0.75fr;
+  }
+  .div2-most-sale div img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .p-most-sale  {
+    font-size: 0.85rem;
+  }
+  
+}
+@media screen and (min-width:500px) {
+  .div-most-sale{
+    grid-template-rows: none;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: 2rem auto;
+    border: 1px solid skyblue;
+    padding: 2rem;
+  } 
+  .icon-category {
+    font-size: 2.25rem;
+  }
+  .most-sale-product div p{
+    font-size: 1.25rem;
+  }
+  .most-sale-product div button {
+    font-size: 1.2rem;
+  }
+  
+}
