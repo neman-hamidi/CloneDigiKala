@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import imgs from "./text";
+import imgs from "./Text";
 export default function advace() {
   return (
     <div className="my-5">
