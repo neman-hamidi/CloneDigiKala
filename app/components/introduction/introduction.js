@@ -35,12 +35,12 @@ const introduction = () => {
           <VerifiedOutlinedIcon className="ms-1 icon-category" />
           پر فروش ترین کالاها
         </p>
-        <button>مشاهده همه</button>
+        <button className="text-xs">مشاهده همه</button>
       </div>
       <div className="div-most-sale mt-4">
         {mostSale.map((item, index) => (
           <div key={index} className="div2-most-sale">
-            <img src={item.src} alt="imgs-mostSale" />
+            <img src={item.src} alt="imgs-mostSale" className="w-20 md:w-40 h-20 md:h-40 md:pe-2" />
             <h3 className="p-number-most-sale">{item.count}</h3>
             <p className="p-most-sale text-secondary">{item.desc}</p>
           </div>
@@ -49,7 +49,7 @@ const introduction = () => {
 
       <div className="intro2">
         {details.slice(4).map((item, index) => (
-          <div key={index} className="mt-5">
+          <div key={index} className="mt-5 text-center">
             <h3 className="pe-3 p1-intro">{item.title}</h3>
             <p className="text-secondary pe-3 p2-intro">براساس سلیقه شما</p>
             <Firstproduct>

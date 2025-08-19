@@ -9,7 +9,7 @@ export default function category() {
         {details.slice(0, 14).map((item, index) => (
           <div key={index} className="text-center">
             <img src={item.src} alt="imgs" />
-            <label>{item.title}</label>
+            <label className="text-xs md:text-sm">{item.title}</label>
           </div>
         ))}
       </div>
@@ -33,7 +33,7 @@ export default function category() {
       </article>
       <div className="banner-2">
         {details.slice(15, 17).map((item, index) => (
-          <img key={index} src={item.src} alt="img" />
+          <img key={index} src={item.src} alt="img" className="rounded-lg" />
         ))}
       </div>
     </>

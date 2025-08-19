@@ -10,8 +10,8 @@ export default function footer() {
       {footerText.map((item, index) => (
         <div key={index} className="div-footer">
           <div className="pe-2">{item.icon}</div>
-          <div className="p-footer">
-            <h3>{item.title}</h3>
+          <div className="p-footer w-full">
+            <h3 className="text-xs md:text-sm">{item.title}</h3>
             <p>{item.desc}</p>
           </div>
           <button className="btn btn-outline-dark">{item.btn}</button>
@@ -28,10 +28,11 @@ export default function footer() {
             <AccordionSummary
               expandIcon={<ExpandLessIcon />}
               id="panel1-header"
+              
             >
-              {item.title}
+              <p className="text-sm">{item.title}</p>
             </AccordionSummary>
-            <AccordionDetails>{item.desc}</AccordionDetails>
+            <AccordionDetails className="text-xs">{item.desc}</AccordionDetails>
           </Accordion>
         ))}
       </div>
